@@ -1,0 +1,8 @@
+<div class="container">
+  <app-info [count]="gentlemen.length"></app-info>
+  <app-button (selectAll)="selectAll($event)"></app-button>
+  <app-gentleman
+    *ngFor="let gentleman of gentlemen"
+    [gentleman]="gentleman"
+  ></app-gentleman>
+</div>
